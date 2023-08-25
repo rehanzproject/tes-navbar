@@ -21,7 +21,6 @@ body {
 
 .underline {
   position: relative;
-
   transition: transform 0.3s, width 0.3s;
 }
 
@@ -29,7 +28,7 @@ body {
   text-decoration: none;
   color: blue;
   padding: 8px 4px;
-border-bottom: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
 
 /* Additional styling for the underline's active position */
@@ -49,6 +48,70 @@ border-bottom: 2px solid blue;
   padding-top: 20px;
 }
 
+.svg {
+  display: inline-block;
+  padding: 2px 4px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+.dropbtn.active {
+  border-bottom: 2px solid blue;
+  color: blue;
+  z-index: 999;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* background: white; */
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Footer */
 .footer {
   background-color: #333;
   width: 100%;
